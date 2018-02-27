@@ -1,0 +1,181 @@
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+.index_head{
+    width:100%;
+    height: 50px;
+    line-height: 55px;
+    background:#fff;
+}
+.index_head img{
+
+    vertical-align: middle;
+    margin:0 auto;
+    width:30px;
+    line-height: 68px;
+    height: 30px;
+    margin-top:10px;
+    text-align: center;
+
+}
+.index_head input{
+    float: left;
+    margin-top:10px;
+    padding:7px 10px 5px 35px;
+    border-radius: 5px;
+   border:0;
+   color: #666;
+   background:#E6E6E6;
+    width:62%;
+    font-size: 13px;
+    outline: none;
+    background-image: url("../icon/serch.png");
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.index_head .img{
+    width:18%;
+    vertical-align: center;
+    text-align: center;
+    float: left;
+}
+
+
+.head_nav{
+    margin-top:8px;
+    background: #fff;
+    padding:15px 0;
+}
+.head_nav .single{
+    float:left;
+    width: 20%;
+  
+    text-align: center;
+}
+.head_nav img{
+    width:25px;
+
+}
+.head_nav p{
+    font-size: 12px;
+}
+.next_nav{
+    background: #fff;
+    padding:20px 0;
+    margin-top:8px;
+}
+.next_nav .single{
+    float: left;
+    width: 50%;
+}
+.next_nav .left{
+    margin-left:20px;
+    float: left;
+}
+.next_nav .right{
+
+
+    text-align: center;
+    
+}
+.next_nav img{
+ 
+   text-align: center;
+   margin-top: 5px;
+    width:27px;
+}
+.next_nav .p1{
+    color:#333;
+    font-size: 14px;
+    font-weight:600;
+}
+.next_nav .p2{
+    color: #666;
+    margin-top:5px;
+    font-size: 10px;
+}
+.fenlei{
+   
+    background:#fff;
+    margin-top:8px;
+    overflow: hidden;
+
+      
+}
+
+.fenlei_ul{
+    overflow: hidden;
+
+
+}
+.fenlei .single{
+
+    float:left;
+    padding-top:10px;
+    margin-left: 10px;
+}
+.fenlei img{
+    width:70px;
+    height: 50px;
+    border:1px solid #666;
+}
+.fenlei p{
+    text-align: center;
+    color: #666;
+    line-height: 15px;
+    font-size: 10px;
+    padding-bottom: 2px;
+}
+/** 商品 **/
+.shop{
+    margin-top:8px;
+    overflow: hidden;
+    
+}
+.shop .single{
+    float: left;
+    width: 140px;
+    background: #fff;
+    margin-left:10px;
+    padding-bottom: 5px;
+}
+.shop .single img{
+   
+    width: 140px;
+    height: 140px;
+}
+.shop .single p{
+    font-size: 12px;
+    height: 20px;
+    width: 140px;
+    padding: 0 8px;
+    text-align: left;
+    overflow:hidden;
+}
+.shop .single .p2{
+    font-size: 10px;
+    color: #666;
+    height: 15px;
+}
+.shop .single .p3{
+    margin-top:3px;
+}
+.shop .single .box{
+    font-size: 10px;
+    padding:0 25px;
+    border:1px solid #999;
+    border-radius: 2px;
+    float: right;
+}
+.xianzhi{
+    margin-top:8px;
+}
+.xianzhi .head1{
+    background:#fff;
+    height: 45px;
+    line-height:45px;
+    text-align: center;
+    border-bottom:1px solid #efefee;
+}

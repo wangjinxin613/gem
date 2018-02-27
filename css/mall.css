@@ -1,0 +1,365 @@
+/** 商城商品列表 **/
+.mall-list-head{
+    width: 100%;
+    background: #fff;
+    padding:10px 0;
+    padding-top:15px !important;
+}
+.mall-list-head .return{
+    width:18px;
+}
+.mall-list-head img{
+    width:22px;
+    margin-top:0px;
+}
+.mall-list-head .left{
+    float: left;
+    width:40px;
+    text-align: center;
+}
+.mall-list-head .center{
+    float: left;
+    width:calc(100% - 85px);
+}
+.mall-list-head input{
+    width:100%;
+    border:0;
+    background: url("../icon/serch.png");
+    background-position: left center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    padding-left:20px !important;
+    border-bottom:1px solid #ccc !important;
+   padding-top: 2px;
+}
+.mall-list-item{
+    widows: 100% ;
+    background: #fff;
+}
+.mall-list-item .single{
+    float: left;
+    width: 25vw;
+    text-align: center;
+    padding:5px 0 10px 0;
+}
+.shop{
+    overflow: hidden;
+}
+.shop .single{
+    float: left;
+    width: calc((100% - 30px)/2);
+    background: #fff;
+    margin-left:10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+.shop .single img{
+   
+    width: 100%;
+    height: 45vw;
+}
+.shop .single p{
+    font-size: 12px;
+    height: 20px;
+    width: calc((100% - 30px)/2-30px);
+    padding: 0 8px;
+    text-align: left;
+    overflow:hidden;
+}
+.shop .single .p2{
+    font-size: 10px;
+    color: #666;
+    height: 15px;
+}
+.shop .single .p3{
+    margin-top:3px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(215, 191, 153);
+}
+.shop .single .box{
+    font-size: 10px;
+    padding:0 25px;
+    border:1px solid #999;
+    border-radius: 2px;
+    float: right;
+}
+.layui-flow-more a cite{
+    margin-top:10px;
+    background:rgb(215, 191, 153) !important;
+    color:#fff !important;
+    padding: 5px 50px !important;
+    font-size: 12px;
+}
+.slider img{
+    width:auto !important;
+    text-align: center !important;
+    margin:0 auto !important;
+    display:block;
+}
+/** 商品详情页 **/
+.detail-head{
+    position: fixed;
+    z-index: 100;
+}
+.detail-head .left{
+    position: fixed;
+    top:15px;
+    left:10px;
+
+    background: #999;
+    border-radius: 100px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    padding-right: 2px;
+    text-align: center;
+}
+.detail-head .right{
+    position: fixed;
+    top:15px;
+    right:10px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    background: #999;
+    border-radius: 100px;
+  
+}
+.detail-head img{
+    width: 20px;
+}
+.detail-title{
+    background: #fff;
+    padding:10px 15px;
+}
+.detail-title p{
+    font-size: 15px;
+}
+.detail-title .price{
+    text-align: right;
+    color: rgb(255,108,108);
+    padding:5px 0;
+    font-size: 13px;
+}
+.index-head{
+    position: fixed;
+    top:0;
+    left:0;
+}
+.detail-message{
+    background: #fff;
+    margin-top: 10px;
+    padding:0 15px;
+}
+.detail-message .single{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.detail-message h2{
+    padding-top:10px;
+    padding-bottom: 2px;
+}
+.detail-message p{
+    padding:3px 0;
+    font-size: 12px;
+    color: #666;
+}
+.detail-user{
+    background: #fff;
+    height: 70px;
+    line-height: 70px;
+    margin-top:10px;
+}
+.detail-user img{
+    width: 45px;
+    line-height: 60px;
+    height: 45px;
+    margin-left: 15px;
+    float: left;
+    border-radius: 100PX;
+    margin-top:12.5px;
+}
+.detail-user .right{
+    float: left;
+    margin-left: 15px;
+    margin-top:8px;
+}
+.detail-user p{
+    font-size: 12px;
+}
+.detail-user .p2{
+    margin-left:-3px;
+}
+.detail-user .p2 span{
+    padding:2px 2PX 0 2PX;
+    border:1px solid #333;
+    font-size: 10px;
+    border-radius:3PX;
+    color: #555;
+    margin-left: 5px;
+}
+.detail-user .p3{
+    color: rgb(255,108,108);
+}
+.detail-body{
+    background: #fff;
+    margin-top:10px;
+}
+.detail-body .detail-body-head{
+    text-align: center;
+    padding:8px 0;
+    border-bottom: 1px solid #eee;
+}
+.detail-body .body{
+    padding:0 10px 10px 10px;
+
+}
+.detail-body img{
+    width: 100%;
+    margin-top: 10px;
+}
+.xz_detail_foot{
+    border-top:1px solid #eee;
+    width: 100%;
+    position:fixed;
+    left:0;
+    background: #fff;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+}
+.xz_detail_foot .single:first-child{
+    margin-left:2%;
+}
+.xz_detail_foot .single{
+    float: left;
+    width:18%;
+    margin-top:8px;
+    text-align: center;
+}
+.xz_detail_foot .single img{
+    width:20px;
+    height:20px;
+}
+.xz_detail_foot .single p{
+
+   font-size: 12px;
+   color: rgb(215, 191, 153);
+}
+.xz_detail_foot .btn1{
+    background: rgb(215, 191, 153);
+    color: #fff;
+    float: right;
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/** 购物车 **/
+.head .send_url{
+    position: absolute;
+    padding:2px 6px;
+    border:1px solid rgb(215, 191, 153);
+    color: rgb(215, 191, 153);
+    font-size: 12px;
+    right:15px;
+    top:11px;
+    border-radius: 5px;
+}
+/** 确认订单**/
+.order-list{
+    background: #fff;
+    width: 100%;
+    margin-top:10px;
+
+}
+.order-list .single{
+    border-bottom: 1px solid #eee;
+}
+.order-list img{
+    width:70px;
+    height: 70px;
+    float: left;
+    padding:10px 0;
+    padding-left: 15px !important;
+}
+.order-list .right{
+    float:left;
+    padding-left: 15px;
+    padding-top:15px;
+}
+.order-list .right .p2{
+    font-size: 16px;
+    margin-top:15px;
+    color: rgb(255,108,108);
+}
+.address{
+    margin-top:10px;
+    color: #000;
+    padding: 0 15px;  
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    background-image: url("../icon/right.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right 15px center;
+}
+.order-setting{
+    background: #fff;
+    width: 100%;
+    padding:0 15px;
+    margin-top: 10px;
+}
+.order-setting p{
+    padding:10px 0;
+    border-bottom: 1px solid #eee;
+}
+.order-setting span{
+    float: right;
+    color: rgb(255,108,108);
+}
+.order-setting .p3,.order-setting .p3 span{
+    font-size: 16px;
+}
+.order-setting input{
+    width:15px;
+    height: 15px;
+    margin-left:25px;
+    position: absolute;
+    margin-top: 2px;
+}
+.order-setting em{
+    margin-left:48px;
+}
+.order-submit{
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    width:100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+}
+.order-submit span{
+  
+    width:65%;
+    margin-right: 15px;
+}
+.order-submit button{
+    width:35%;
+
+    float: right;
+    line-height: 50px;
+    height:50px;
+    background: rgb(255,108,108);
+    border:0;
+    color: #fff;
+}
+.order-submit em{
+    color: rgb(255,108,108);
+}

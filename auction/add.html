@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>拍卖</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/send.css?v=4" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+</head>
+
+<body>
+    <div class="head" style="border-bottom:1px solid #eee;">
+        <img src="../icon/cha.png" onclick="window.history.back()" /> 拍卖
+    </div>
+    <div class="top-empty"></div>
+    <div class="xz_add">
+        <input type="text" placeholder="标题 品牌品类等买家易搜索到的">
+        <textarea placeholder="宝贝细节描述"></textarea>
+    </div>
+    <div class="xz_img">
+        <div class="add_img" id="demo2">
+        </div>
+        <img src="../icon/add.png" id="test2">
+        <div class="clear"></div>
+        <div class="lbs">
+            <img src="../icon/lbs.png">
+            <div class="didian"> 广东&nbsp;东莞</div>
+        </div>
+    </div>
+    <div class="add-list">
+        <div class="add-jigou" style="padding-bottom:5px">
+            <button class="active" onclick="qiehuan(this,'1')">一口价</button>
+            <button onclick="qiehuan(this,'2')">拍卖</button>
+            <div class="clear"></div>
+        </div>
+    
+        <div class="notice-list">
+            <div class="p">起拍价<input type="number" class="input color_red" placeholder="￥0.00"></div>
+            <div class="p">保证金<input type="number" class="input color_red" placeholder="￥0.00"></div>
+            <div class="p">加价幅度<input type="number" class="input color_red" placeholder="￥0.00"></div>
+            <div class="p">开拍时间 <input type="text" class="layui-input input" id="test5" placeholder="点击选择时间"></div>
+            <div class="p">结束时间<input type="text" class="layui-input input" id="test5" placeholder="点击选择时间"></div>
+        </div>
+        <div class="chat-list" style="display:none">
+                <div class="p">价格<input type="number" class="input color_red" placeholder="￥0.00"></div>
+                <div class="p">品牌<select class="input">
+                    <option>品牌A</option>
+                    <option>品牌B</option>
+                </select></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="add-fabu">确定发布</button>
+</body>
+<script src="../css/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('upload', function () {
+        var $ = layui.jquery
+            , upload = layui.upload;
+        //多图片上传
+        upload.render({
+            elem: '#test2'
+            , url: 'add.json'
+            , multiple: false
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo2').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                });
+            }
+            , done: function (res) {
+                //上传完毕
+            }
+        });
+    });
+</script>
+         
+          <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+          <script>
+          layui.use('laydate', function(){
+            var laydate = layui.laydate;
+            //时间选择器
+  laydate.render({
+    elem: '#test5'
+    ,type: 'datetime'
+  });
+          })
+          </script> 
+          <script>
+                function qiehuan(th, status) {
+                    $(".add-jigou button").removeClass("active");
+                    $(th).addClass("active");
+                    if (status == 1) {
+                        $(".notice-list").css("display", "block");
+                        $(".chat-list").css("display", "none");
+                    } else {
+                        $(".notice-list").css("display", "none");
+                        $(".chat-list").css("display", "block");
+                    }
+                }
+            </script>
+</html>

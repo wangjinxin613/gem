@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>设计师</title>
+    <link href="../css/style.css?v=1" rel="stylesheet">
+    <link href="../css/designer.css?v=4" rel="stylesheet">
+    <link href="../css/send.css?v=4" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+</head>
+
+<body>
+    <div class="head" style="border-bottom:1px solid #eee;">
+        <img src="../icon/return.png" onclick="window.history.back()" />设计师
+        <img src="../icon/zhuanfa.png" class="rightimg" />
+    </div>
+    <div class="top-empty"></div>
+    <!-- 设计师列表-->
+    <div class="index-list" onclick="window.location.href='detail.html'">
+        <div class="header">
+            <img src="../img/headimg.jpg">
+            <div class="right">
+                <p class="p1">设计师_1
+                    <a href="">关注</a>
+                </p>
+                <p class="p2">广东省首饰设计师</p>
+                <p class="p3">
+                    <span>实名认证</span>
+                    <span>设计师</span>
+                    <span>保证金</span>
+                </p>
+            </div>
+        </div>
+        <div class="mes_tu wrapper c1" id="wrapper" style="background:#efefef">
+            <ul>
+                <li class="single">
+                    <img src="../img/shejishi.jpg">
+                </li>
+                <li class="single">
+                    <img src="../img/shejishi2.jpg">
+                </li>
+                <li class="single">
+                    <img src="../img/shejishi2.jpg">
+                </li>
+                <li class="single">
+                    <img src="../img/shejishi2.jpg">
+                </li>
+                <li class="single">
+                    <img src="../img/shejishi2.jpg">
+                </li>
+                <li class="single">
+                    <img src="../img/shejishi2.jpg">
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="index-list">
+            <div class="header">
+                <img src="../img/headimg.jpg">
+                <div class="right">
+                    <p class="p1">设计师_1
+                        <a href="">关注</a>
+                    </p>
+                    <p class="p2">广东省首饰设计师</p>
+                    <p class="p3">
+                        <span>实名认证</span>
+                        <span>设计师</span>
+                        <span>保证金</span>
+                    </p>
+                </div>
+            </div>
+            <div class="mes_tu wrapper c1" id="wrapper" style="background:#efefef">
+                <ul>
+                    <li class="single">
+                        <img src="../img/shejishi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/shejishi2.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/shejishi2.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/shejishi2.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/shejishi2.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/shejishi2.jpg">
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="index-list">
+                <div class="header">
+                    <img src="../img/headimg.jpg">
+                    <div class="right">
+                        <p class="p1">设计师_1
+                            <a href="">关注</a>
+                        </p>
+                        <p class="p2">广东省首饰设计师</p>
+                        <p class="p3">
+                            <span>实名认证</span>
+                            <span>设计师</span>
+                            <span>保证金</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="mes_tu wrapper c1" id="wrapper" style="background:#efefef">
+                    <ul>
+                        <li class="single">
+                            <img src="../img/shejishi.jpg">
+                        </li>
+                        <li class="single">
+                            <img src="../img/shejishi2.jpg">
+                        </li>
+                        <li class="single">
+                            <img src="../img/shejishi2.jpg">
+                        </li>
+                        <li class="single">
+                            <img src="../img/shejishi2.jpg">
+                        </li>
+                        <li class="single">
+                            <img src="../img/shejishi2.jpg">
+                        </li>
+                        <li class="single">
+                            <img src="../img/shejishi2.jpg">
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+</body>
+<script type="text/javascript" src="../js/yxMobileSlider.js"></script>
+<script>
+    $(".slider").yxMobileSlider({ width: 640, height: 360, during: 3000 })
+</script>
+
+<script>
+    function wrapper() {
+        $(".c1 ul").each(function (index, th) {
+            var ele = $(th);
+            ele.width((ele.find("li").length) * (ele.find("li").width() + 10) );
+        })
+        $(".wrapper").each(function (index, th) {
+
+            var myScroll = new IScroll(th, {
+                scrollX: true,
+                scrollY: false,
+                disablePointer: true,
+                disableTouch: false,
+                eventPassthrough: true
+            });
+        })
+    }
+    wrapper()
+</script>
+
+</html>

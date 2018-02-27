@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>鉴定</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/send.css?v=4" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layui/css/layui.css?v=1" media="all">
+   
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-1.8.1.min.js"></script>
+</head>
+
+<body>
+    <div class="head" style="border-bottom:1px solid #eee;">
+        <a onclick="window.parent.layer.closeAll()">
+            <img src="../icon/cha.png" />鉴定</a>
+    </div>
+    <div class="top-empty"></div>
+    <div class="xz_add">
+
+        <textarea placeholder="商品简要描述，并且上传图片"></textarea>
+    </div>
+    <div class="xz_img">
+        <div class="add_img" id="demo2">
+        </div>
+        <img src="../icon/add.png" id="test2">
+        <div class="clear"></div>
+        <div class="lbs">
+            <img src="../icon/lbs.png">
+            <div class="didian"> 广东&nbsp;东莞</div>
+        </div>
+    </div>
+
+    <div class="add-list">
+        <div class="add-jigou">
+            <button>在线鉴定</button>
+            <button onclick="jianding(this)">鉴定机构</button>
+        </div>
+        <div class="clear"></div>
+        <div class="p" onclick="select()" id="select1">品牌
+            <input type="hidden" value="">
+            <span></span>
+        </div>
+        <div class="p">鉴定费用
+            <span>￥0.00</span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="add-fabu">确定发布</button>
+</body>
+
+<script src="../css/layui/layui.all.js" charset="utf-8"></script>
+<script>
+    layui.use('upload', function () {
+        var $ = layui.jquery
+            , upload = layui.upload;
+        //多图片上传
+        upload.render({
+            elem: '#test2'
+            , url: 'add.json'
+            , multiple: false
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo2').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                });
+            }
+            , done: function (res) {
+                //上传完毕
+            }
+        });
+    });
+</script>
+<script src="../css/layer_mobile/layer.js"></script>
+<script>
+    function select() {
+        //底部对话框
+        var html = '<p onclick="opption1(this)">品牌A</p><p onclick="opption1(this)">品牌B</p>';
+        select1 = layer.open({
+
+            content: html
+            , btn: ['取消']
+            , skin: 'footer'
+            , yes: function (index) {
+                layer.close(index);
+            }
+        });
+
+    }
+    function opption1(th){
+        var text = $(th).text();
+        $("#select1").find("span").text(text);
+        $("#select1").find("input").val(text);
+        layer.close(select1);
+    }
+    function jianding(th){
+        $(th).addClass("active");
+     
+        var html = '<iframe align="center" width="100%" style="min-height:100vh;" height="100%" src="jigou.html" frameborder="no" border="0" marginwidth="0" marginheight="0" ></iframe>';
+        var indexs = layer.open({
+            type: 1
+            ,content: html
+            ,anim: 'scale'
+            ,style: 'left:0; top:0; width:100%; height:100%; border: none; -webkit-animation-duration: .5s; animation-duration: .5s;'
+          });
+    }
+</script>
+
+</html>

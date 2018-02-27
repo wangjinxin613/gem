@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>珠宝定制</title>
+    <link href="../css/style.css?v=1" rel="stylesheet">
+    <link href="../css/send.css?v=4" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+</head>
+<style>
+    .message .head_img .p3 {
+        font-size: 12px;
+    }
+
+    .message .head_img p {
+        line-height: 18px;
+    }
+
+    .message .headimg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .message .head_img p:first-child {
+        margin-top: 0;
+    }
+</style>
+
+<body>
+    <div class="head" style="border-bottom:1px solid #eee;">
+        <img src="../icon/return.png" onclick="window.history.back()" /> 珠宝定制
+        <a href="add.html" class="send_url">发布</a>
+    </div>
+    <div class="top-empty"></div>
+    <!-- 最新的 -->
+    <div class="new">
+        <div class="message" onclick="window.location.href='detail.html'">
+            <div class="mes_head">
+                <img src="../img/headimg.jpg" class="headimg">
+                <div class="head_img">
+                    <p>会员名称</p>
+                    <p class="p2">1小时前来过</p>
+                    <p class="p3">翡翠玉雕件定制</p>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="mes_tu wrapper c1" id="wrapper">
+                <ul>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="body">翡翠语调件 翡翠语调件翡翠语调件翡翠语调件翡翠语调件翡翠语调件翡翠语调件</div>
+            <div class="mes_foot">来自广东</div>
+        </div>
+        <div class="message margin10">
+            <div class="mes_head">
+                <img src="../img/headimg.jpg" class="headimg">
+                <div class="head_img">
+                    <p>会员名称</p>
+                    <p class="p2">1小时前来过</p>
+                    <p class="p3">翡翠玉雕件定制</p>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="mes_tu wrapper c1" id="wrapper">
+                <ul>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                    <li class="single">
+                        <img src="../img/zuanshi.jpg">
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="body">翡翠语调件 翡翠语调件翡翠语调件翡翠语调件翡翠语调件翡翠语调件翡翠语调件</div>
+            <div class="mes_foot">来自广东</div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="foot">
+        <a href="../index.html">
+            <div class="single">
+                <img src="../icon/home.png">
+                <p>首页</p>
+            </div>
+        </a>
+        <div class="single">
+            <img src="../icon/xiaoxi.png">
+            <p>消息</p>
+        </div>
+
+        <div class="single">
+            <img src="../icon/send.png">
+            <p>发布</p>
+        </div>
+        <div class="single">
+            <img src="../icon/paimai.png">
+            <p>拍卖</p>
+        </div>
+        <div class="single">
+            <img src="../icon/user.png">
+            <p>我的</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/yxMobileSlider.js"></script>
+<script>
+    $(".slider").yxMobileSlider({ width: 640, height: 360, during: 3000 })
+</script>
+
+<script>
+    function wrapper() {
+        $(".c1 ul").each(function (index, th) {
+            var ele = $(th);
+            ele.width((ele.find("li").length) * (ele.find("li").width() + 10) + 10);
+        })
+        $(".wrapper").each(function (index, th) {
+
+            var myScroll = new IScroll(th, {
+                scrollX: true,
+                scrollY: false,
+                disablePointer: true,
+                disableTouch: false,
+                eventPassthrough: true
+            });
+        })
+    }
+    wrapper()
+</script>
+
+</html>

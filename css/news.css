@@ -1,0 +1,97 @@
+.index-head{
+    padding:12px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+.index-head a{
+    padding:5px 0;
+
+    color: #777;
+}
+.index-head .active{
+    border-bottom: 2px solid rgb(215, 191, 153);
+    color: rgb(215, 191, 153);
+}
+.notice-list{
+    background: #fff;
+    width: 100%;
+}
+.notice-list p{
+    padding:0px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 40px;
+    background-image: url("../icon/right.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+.notice-list img{
+    width:20px;
+    height: 20px;   
+    position: absolute;
+    margin-top:9px;
+}.notice-list p span{
+    margin-left: 28px;
+}
+.chat-serch{
+    padding:5px 10px;
+    padding-left: 27px;
+    width:90%;
+    margin-left:5% !important;
+    font-size: 13px;
+    border-radius: 5px;
+    margin:8px 0;
+    border:0;
+    background: #FBFBFB;
+    background-image: url('../icon/serch.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+}
+.chat-list .single{
+    height: 56px;
+    line-height:56px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.chat-list .single img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin:8px 10px;
+    border-radius: 100px;
+}
+.chat-list .single .right{
+    width: calc(100% - 60px);
+    float: left;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    padding-top: 8px;
+
+}
+.chat-list p{
+    font-size: 13px;
+    line-height: 23px;
+    height: 20px;
+    overflow: hidden;
+
+}
+.chat-list .single .right .p1{
+    font-size: 14px;
+    
+}
+.chat-list .single .right .p2{
+    color: #888;
+    width:calc(100% - 15px);
+}
+.chat-list .single .right span{
+    float: right;
+    color: #999;
+    margin-right: 10px;
+    font-size: 12px;
+}
+    

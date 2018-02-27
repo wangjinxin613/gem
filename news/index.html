@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>评估与鉴定</title>
+    <link href="../css/style.css?v=1" rel="stylesheet">
+    <link href="../css/news.css?v=4" rel="stylesheet">
+    <link href="../css/layer_mobile/need/layer.css" rel="stylesheet">
+    <script src="../js/jquery-1.8.1.min.js"></script>
+</head>
+
+<body>
+    <div class="index-head">
+        <a href="javascript:void(0)" class="active" onclick="qiehuan(this,'1')">通知</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0)" onclick="qiehuan(this,'2')">聊天</a>
+    </div>
+    <div class="notice-list">
+        <p>
+            <img src="../icon/xitongtongzhi.png">
+            <span>系统通知</span>
+        </p>
+        <p>
+            <img src="../icon/daifukuan.png">
+            <span>交易信息</span>
+        </p>
+        <p>
+            <img src="../icon/liuyan.png">
+            <span>留言</span>
+        </p>
+        <p>
+            <img src="../icon/sixin.png">
+            <span>私信</span>
+        </p>
+        <p>
+            <img src="../icon/pingjia.png">
+            <span>评价</span>
+        </p>
+        <p>
+            <img src="../icon/dianzan.png">
+            <span>点赞</span>
+        </p>
+        <p>
+            <img src="../icon/dashang.png">
+            <span>打赏</span>
+        </p>
+    </div>
+    <div class="chat-list" style="display:none">
+        <!-- 搜索框 -->
+        <input type="text" placeholder="搜索" class="chat-serch">
+        <a href="chat.html">
+        <div class="single">
+            <img src="../img/headimg.jpg">
+            <div class="right">
+                <p class="p1">记得要微笑
+                    <span>11:45</span>
+                </p>
+                <p class="p2">你好，在吗</p>
+            </div>
+        </div>
+        </a>
+        <div class="single">
+            <img src="../img/headimg.jpg">
+            <div class="right">
+                <p class="p1">记得要微笑
+                    <span>11:45</span>
+                </p>
+                <p class="p2">你好，在吗</p>
+            </div>
+        </div>
+        <div class="single">
+            <img src="../img/headimg.jpg">
+            <div class="right">
+                <p class="p1">记得要微笑
+                    <span>11:45</span>
+                </p>
+                <p class="p2">你好，在吗</p>
+            </div>
+        </div>
+        <div class="single">
+            <img src="../img/headimg.jpg">
+            <div class="right">
+                <p class="p1">记得要微笑
+                    <span>11:45</span>
+                </p>
+                <p class="p2">你好，在吗</p>
+            </div>
+        </div>
+        <div class="single">
+            <img src="../img/headimg.jpg">
+            <div class="right">
+                <p class="p1">记得要微笑
+                    <span>11:45</span>
+                </p>
+                <p class="p2">你好，在吗记得要微笑记得要微笑记得要微笑记得要微笑</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部菜单栏 -->
+    <div class="foot">
+        <a href="../">
+            <div class="single">
+                <img src="../icon/home.png">
+                <p>首页</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="single">
+                <img src="../icon/xiaoxi_active.png">
+                <p>消息</p>
+            </div>
+        </a>
+        <div class="single">
+            <img src="../icon/send.png">
+            <p>发布</p>
+        </div>
+        <div class="single">
+            <img src="../icon/paimai.png">
+            <p>拍卖</p>
+        </div>
+        <a href="../member">
+            <div class="single">
+                <img src="../icon/user.png">
+                <p>我的</p>
+            </div>
+        </a>
+    </div>
+</body>
+<script>
+    function qiehuan(th, status) {
+        $(".index-head a").removeClass("active");
+        $(th).addClass("active");
+        if (status == 1) {
+            $(".notice-list").css("display", "block");
+            $(".chat-list").css("display", "none");
+        } else {
+            $(".notice-list").css("display", "none");
+            $(".chat-list").css("display", "block");
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,80 @@
+
+/* 购物车 */
+div#shopping_cart { position: fixed; bottom: 7px; right: 2%; background: #aacc36; width: 50px; height: 50px; border-radius: 50%; z-index: 9998; }
+#shopping_cart a { position: relative; display: block; text-align: center; }
+#shopping_cart a img { width: 52%; margin-top: 13px; }
+#shopping_cart a em { position: absolute; width: 18px; height: 18px; background: #ff900d; border-radius: 50%; right: 12px; top: 4px; line-height: 18px; color: #fff; display: none; }
+#newly_added { color: #ff900d; position: fixed; z-index: 9999; }
+.footer_h { height:100px; text-align: center; color: #999; line-height: 60px; }
+.ion-ios-arrow-left:before { content: ""; color: #aacc36; }
+/*购物车*/
+.cart_top p { float: right; margin: 0; }
+.cart_top { padding: 12px 4%; background: #fff; font-size: 0.7rem; color: #999; line-height: 24px; border-bottom: solid 1px #e6e6e6; }
+.commodity_list { background: #fff; margin-bottom: 10px; }
+.shop_ul_bottom.account_info_box:nth-last-child(1) { border-bottom: none; }
+.commodity_list .tite_tim { width: 94%; margin: 0 auto; padding: 12px 0; color: #333; font-size: 0.7rem; background: url(../images/weixin/jit_icon.png) no-repeat right center; background-size: 6px; }
+.commodity_list .tite_tim em { float: left; width: 17px; height: 17px; border: solid 1px #e6e6e6; border-radius: 50%; margin-right: 10px; }
+.commodity_list .commodity_list_term { margin-left: 3%; }
+.commodity_list .commodity_list_term li { border-top: solid 1px #e6e6e6; padding-right: 4%; position: relative; overflow: hidden; padding: 12px 0; }
+.commodity_list .commodity_list_term li em { position: absolute; width: 17px; height: 17px; border: solid 1px #e6e6e6; border-radius: 50%; left: 0; top: 37px; }
+.commodity_list .commodity_list_term li img { width: 70px; height: 70px; max-width: 80px; max-height: 80px; float: left; margin-left: 28px; }
+.commodity_list .commodity_list_term li .div_center { width: 50%; float: left; position: relative; margin-top: 7px; margin-left: 3%; }
+.commodity_list .commodity_list_term li .div_center h4 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; color: #333; margin: 0; font-size: 14px; margin-bottom: 2px; }
+.commodity_list .commodity_list_term li .div_center span { color: #666; font-size: 0.6rem; }
+.commodity_list .commodity_list_term li .div_center p { margin: 0; font-size: 14px; color: rgb(255,108,108); margin-top: 16px; font-family: "-apple-system","Helvetica Neue",Roboto,"Segoe UI",sans-serif; }
+.commodity_list .commodity_list_term li .div_right { position: absolute; bottom: 10px; right: 4%; border: solid 1px #e6e6e6; border-radius: 4px; width: 82px; overflow: hidden; text-align: center; line-height: 30px; }
+.commodity_list .commodity_list_term li .div_right i { float: left; width: 33%; color: #333; }
+.commodity_list .commodity_list_term li .div_right span { float: left; width: 33%; border-left: solid 1px #e6e6e6; border-right: solid 1px #e6e6e6; color: #333; }
+.shop_ul_bottom.account_info_box { margin-top: 0; border-top: solid 1px #e6e6e6; border-bottom: solid 1px #e6e6e6; }
+.shop_ul_bottom.account_info_box .xi_cu { height: 24px; line-height: 24px; padding: 0 6px; border-radius: 4px; background: #ff900d; color: #fff; margin-top: 11px; margin-right: 2%; }
+.settle_box .all_check em { font-weight: initial; font-size: 14px; margin-left:5px !important; margin-left: 4%; }
+.commodity_list .commodity_list_term li .div_center p i { font-size: 0.6rem; }
+.commodity_list .commodity_list_term li .div_center p b { font-weight: initial; }
+.settle_box .total_amount b { font-weight: initial; }
+.finish_box { text-align: center; line-height: 24px; }
+.finish_box img { width: 35%; margin-top: 50px; margin-bottom: 15px; }
+.finish_box h1 { font-size: 0.9rem; color: #333; }
+.finish_box p { color: #999; font-size: 0.7rem; }
+.finish_box a { color: #aacc36; font-size: 0.7rem; }
+
+@media screen and (max-width: 770px){
+	.alreasdy_box .da_icon{ background-size: 16px; }
+}
+@media screen and (max-width: 414px){
+	.alreasdy_box .da_icon{ background-size: 17.5px; }
+}
+@media screen and (max-width: 375px){
+	.alreasdy_box .da_icon{ background-size: 20px; }
+}
+/*多分辨率设定rem设定*/
+/*Note3*/
+
+    h1,h2,h3,h4,h5,h6{font-size:0.875em;}
+    form, fieldset, legend, input, button, textarea, p, blockquote,select,option{ font-size:0.625rem;font-family: "黑体",Arial;}
+    img{-ms-interpolation-mode:bicubic; max-width:100%;}/*防止windows缩放图片时，图像失真*/
+    /*组合商品结束*/
+    
+    .settle_box_h{ height:60px;padding:17px 0;}
+    .settle_box{ background:#fff; position:fixed; left:0px; bottom:0px; overflow:hidden; z-index:2;width: 100%;padding:0 0 0 4%;border-top: solid 1px #e6e6e6;} 
+    .settle_box .all_check,.settle_box .total_amount{ float:left;}
+    .settle_box .all_check{ width:17%;margin-bottom:0;margin-top: 20px}
+    .settle_box .all_check dd{ color:#999999; font-size:12px;}
+    .settle_box .all_check span{ width:17px; height:17px; border:solid 1px #a2a2a2; vertical-align:middle; border-radius:50%;float: left;}
+    .settle_box .all_check .disabled{ background:#e1e1e1;border:solid 1px #e1e1e1;}
+    .settle_box .all_check  .pitch_on{ background:url(../icon/s_goods_pitch.png) no-repeat center center rgb(255,108,108);border:solid 1px #ff900d; background-size:22px 22px; }
+    .settle_box .total_amount {font-size: 14px;margin: 0;width: auto;text-align: left;margin-top: 20px;margin-left:15px;float: left;}
+    .settle_box .total_amount dd{ margin-top:1px;clear: both;font-size: 0.6rem;}
+    .settle_box .total_amount dt p {color: rgb(255,108,108);font-size: 0.8rem;float:left;line-height: 20px;}
+    .settle_box .total_amount dt p:first-letter{ font-size:0.6rem}
+    .settle_box .total_amount dt {font-weight: initial;}
+    .settle_box .settle_btn{ float:right; width:33%; background:rgb(255,108,108); color:#fff; padding:10px 0; margin-right:15px !important;border-radius:7px;margin:8px;text-align:center;font-size: 15px;}
+    #confirm_cart1 {display: none;}
+    .select .pitch_on{ background:url(../icon/s_goods_pitch.png) no-repeat center center rgb(255,108,108);border:solid 1px #ff900d; background-size:22px 22px; }
+    .account_info li{ overflow: hidden;position: relative; border-bottom:solid 1px #eee; padding: 0 4%;line-height: 45px; }
+    .account_info li .info_name{color:#9a9a9a;float: left; display:inline-block;margin-right: 5%;color: #333; font-size: 0.7rem;}
+    .settle_box .total_amount span{
+        color: rgb(255,108,108);
+    }
+    .tuijian .single p{
+        font-size: 14px !important;
+    }

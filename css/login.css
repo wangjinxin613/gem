@@ -1,0 +1,140 @@
+body{
+    background: #fff !important;
+}
+.logo_img{
+    width:24%;
+    margin-left:38%;  
+    border-radius: 100px;
+
+}
+.login_logo{
+    padding-top:40px;
+    padding-bottom: 80px;
+}
+.form input[type='text'],.form input[type='password']{
+    background:#fff;
+    width: 80%;
+    font-size: 16px;
+    margin-left:10%;
+    border:0;
+    
+    border-bottom:1px solid #E9E9E9;
+    color: #333;
+    padding:8px 0;
+    padding-left:10px !important;
+    outline: none;
+    margin-top:10px;
+}
+.form p{
+    width: 90%;
+    padding:8px 0;
+}
+.form a{
+    float: right;
+    text-decoration: none;
+    color: #888;
+}
+.btn{
+    background: #D7BF99;
+    color:#fff;
+    width:36%;
+    height: 35px;
+    border:0;
+    margin-top:40px;
+    text-align: center;
+    margin-left: 32%;
+    font-size: 14px;
+    border-radius: 3px;
+    outline:none;
+}
+.other_type{
+    text-align: center;
+    margin-top:40px;
+}
+.hr{
+    width: 25%;
+    float: left;
+    margin-top:8px;
+    border-top:1px solid #ccc;
+}
+.text{
+    width:30%;
+    text-align: center;
+    float: left;
+    color: #777;
+}
+.other{
+    margin-top:20px;
+}
+.other img{
+    width: 20px;
+   
+}
+.other .single{
+    width: 25%;
+    text-align: center;
+    float: left;
+    font-size: 10px;
+    color: #999;
+}
+.other .single p{
+
+    font-size: 10px;
+}   
+/** 注册 **/
+.reform label{
+    width: 80%;
+    color: #555;
+    padding:10px 0;
+    margin-left:10%;
+    font-size: 15px;
+
+    border-bottom:1px solid #E9E9E9;
+}
+.reform input{
+    width: 60%;
+    background:#fff;
+    font-size: 14px;
+    padding:5px 0;
+    border:0;
+    color: #333;
+    padding-left:10px !important;
+    outline: none;
+    margin-top:15px;
+}
+.reform .i2{
+    margin-left: 15px;
+    width:40%;
+ 
+}
+.reform p{
+    width: 90%;
+    padding:8px 0;
+}
+.reform a{
+    float: right;
+    text-decoration: none;
+    color: #888;
+}
+.sendcode{
+    background: #D7BF99;
+    color:#fff;
+    border:0;
+    outline: none;  
+    font-size: 12px;
+    border-radius: 5px;
+    padding:3px 5px;
+}
+.btn1{
+    background: #D7BF99;
+    color:#fff;
+    width:80%;
+    height: 35px;
+    border:0;
+    margin-top:30px;
+    text-align: center;
+    margin-left: 10%;
+    font-size: 14px;
+    border-radius: 3px;
+    outline:none;
+}

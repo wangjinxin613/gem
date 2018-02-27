@@ -1,0 +1,275 @@
+.index-come{
+    width: 100%;
+ 
+}
+.index-come p{
+    line-height: 20px;
+}
+.index-come .left{
+    float: left;
+    background: #fff;
+    width: 50%;
+    padding:10px;
+    border-right: 1px solid #eee;
+}
+.index-come .left img{
+    max-width: 70px;
+    float: right;
+    PADDING:11PX 0;
+    height: 40px;
+}
+.index-come .left p{
+    font-size: 12px;
+    color: #777;
+}
+.index-come .right{
+    float: left;
+    background: #fff;
+    width: 50%;
+   
+}
+.index-come .right .single{
+    padding:10px;
+    border-bottom: 1px solid #eee;
+}
+.index-come .right img{
+    padding-right: 10px;
+    float: right;
+    height: 40px;
+}
+.index-come .right p{
+    font-size: 12px;
+    color: #777;
+}
+.index-finish{
+    width: 100%;
+    margin-top: 10px;
+    background: #fff;
+    text-align: center;
+    padding:10px 0;
+}
+.index-finish .img{
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: text-top;
+}    
+.index-finish-list{
+    background: #fff;
+    padding-bottom: 5px;
+}  
+.index-finish-list .single{
+    width: 30%;
+    margin-left: 2.5%;
+    float: left;
+}
+.index-finish-list .single img{
+    width: 100%;
+    height: 80px;
+}
+.index-finish-list .single p{
+    line-height: 20px;
+    font-size: 12px;
+}
+.index-finish-list .single .p1{
+    height: 20px;
+    overflow: hidden;
+}
+.index-finish-list .single .p2{
+    color: rgb(255,108,108);
+}
+.index-list{
+    width: 100%;
+ 
+    background: #fff;
+}
+.index-list .single{
+    width: 46.25%;
+    margin-left: 2.5%;
+    float: left;
+    padding-bottom: 5px;
+}
+.index-list .single img{
+    width: 100%;
+    height: 120px;
+}
+.index-list .single p{
+    line-height: 20px;
+    font-size: 12px;
+}
+.index-list .single .p1{
+    height: 20px;
+    overflow: hidden;
+}
+.index-list .single .p2{
+    color: rgb(255,108,108);
+}
+
+.detail{
+    width: 100%;
+    background: #fff;
+    padding:15px 0;
+}
+
+.detail .detail-headimg{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.detail .detail-headimg img{
+    width: 60%;
+    text-align: center;
+}
+.detail .detail-right{
+    width: 80%;
+    float: left;
+    padding-right: 15px;
+}
+.detail .detail-right p{
+    line-height: 20px;
+}
+.detail .detail-right .p1{
+    font-weight: 700;
+}
+.detail .detail-right .p2 span{
+    font-size: 10px;
+    margin-top: 3px;
+    padding:2px 5px;
+    margin-right: 5px;
+    border:1px dotted #777;
+    color: #777;
+    border-radius: 5px;
+}
+.detail .detail-right .p3{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.detail .detail-right .img-list{
+    margin-top: 10px;
+}
+.detail .detail-right .img-list img{
+    width: 31%;
+    margin-right: 1.25%;
+    height: 80px;
+}       
+.detail .detail-right .p4{
+    text-align: right;
+    margin-right: 10px;
+    color: rgb(215, 191, 153);
+
+}
+.detail .detail-right .p4 img{
+    width: 17px;
+    padding-bottom: 0;
+    vertical-align: text-top;
+}
+.detail .detail-right .p5 span{
+    color: rgb(255,108,108);
+
+}
+.detail .detail-right .p5 .s2{
+    float: right;
+}
+.detail-btn{
+    width: 100%;
+    background: rgb(215, 191, 153);
+    color: #fff;
+    font-size: 15px;
+    text-align:center;
+    padding:8px 0;
+    border: 0;
+    margin:5px 0;
+}
+.detail .detail-right .p6{
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+}
+.detail .detail-right .p6 span{
+    border: 1px solid #777;
+    padding:0;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.chujia-list{
+    margin-top: 5px;
+    background: #eee;
+}
+.chujia-list .single{
+    padding:6px 0 3px 0;
+    border-bottom: 1px solid #ccc;
+}
+.chujia-list img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    padding:0px 5px;
+}
+.chujia-list .text-right{
+    float: left;
+    padding-top: 3px;
+    padding-left: 5px;
+    width: calc(100% - 60px);
+}
+
+.chujia-list .text-right p{
+    line-height: 25px;
+    font-size: 13px;
+    width: 100%;
+}
+.chujia-list .text-right .t1 span{
+    font-size: 16px;
+    right: 25px;
+    position: absolute;
+    margin-top: -2px;
+    font-weight: 700;
+}
+.chujia-list .text-right .t1 .s1{
+    color: rgb(255,108,108);
+}
+.chujia-list .text-right .t1 .s2{
+    color:#777;
+}
+.chujia-list .text-right .t2{
+    width: 100%;
+    color: rgb(255,108,108);
+}
+.chujia-list .text-right .t2 span{
+    font-size: 12px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+    color: #777;
+}   
+.detail-shuoming{
+    margin-top: 10px;
+    background: #fff;
+  
+}
+.detail-shuoming .text-head{
+    padding:10px 15px;
+    border-bottom: 1px solid #eee;
+}
+.detail-shuoming p {
+    padding:8px 15px 0 15px;
+    line-height: 0;
+}
+.detail-shuoming .single{
+    padding: 5px 0 10px 0;
+}
+.detail-shuoming p img{
+    width: 15px;
+
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+.detail-shuoming .p0{
+    color: #777;
+    font-size: 12px;
+    margin-left: 25px;
+    padding-top:12px !important;
+    padding-bottom: 0px !important;
+}

@@ -1,0 +1,158 @@
+.member_box{
+    background: #fff;
+    height: 45px;
+    line-height: 45px;
+    padding:0 15px;
+    border-bottom: 1.5px solid #efefef;
+}
+.member_box input{
+    border:0;
+    margin-left: 15px;
+    width:70%;
+    outline: none;
+ 
+}
+.margin10{
+    margin-top:8px;
+}
+.member_btn{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: red;
+    width: 100%;
+    border:0;
+    font-size: 15px;
+    font-weight: 600;
+    background:#fff;
+    margin-top:10px;
+}
+/** 首页 **/
+.index_head{
+
+    text-align: center;
+}
+.index_head img{
+    width: 80px;
+    box-shadow: 0 0 5px #000;
+    height: 80px;
+    border-radius: 100px;
+    margin-top:40px;
+}
+.index_head .tip{
+    font-size: 10px;
+    margin-top: 7px;
+}
+.index_head .p1{
+    font-weight: 600;
+}
+.index_head .tip span{
+    font-size: 10px;
+    padding:2px 5px;
+    color: #666;
+    margin-left:5px;
+    border:1px dotted #999;
+}
+.index_head .p2{
+    margin-top: 7px;
+    color: #666;
+    font-size: 12px;
+}
+.setting{
+    width:30px;
+    position: absolute;
+    right:15px;
+    top:15px;
+}
+.index_status{
+     background: #fff;
+
+}
+.index_status .single{
+    float: left;
+    width: 33%;
+    padding:8px 0;
+    text-align: center;
+}
+.index_status .single p:first-child{
+    color:rgb(215, 191, 153);
+
+}
+.my_order{
+    background: #fff;
+
+    padding:0 5px;
+}
+.my_order .p1{
+    font-weight: 500;
+    padding: 5px 10px;  
+    border-bottom: 1px solid #efefef;
+    background: url("../icon/you.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.my_order .p1 a{
+    color: #707070;
+    font-weight: 500;
+    font-size: 12px;
+    float: right;
+    margin-top:3px;
+    margin-right: 10px;
+}
+.order_status{
+    width: 100%;
+    padding: 8px 0;
+}
+.order_status .single{
+    float: left;
+    text-align: center;
+    width: 25%;
+ 
+    line-height: 15px;
+}
+.order_status p{
+    font-size: 12px;
+}
+.order_status .single img{
+    width:22px;
+}
+.my_yue{
+    width: 100%;
+
+}
+.my_yue .single{
+    float: left;
+    padding:10px 0;
+    font-size: 12px;
+    text-align: center;
+    width: 33.33%;
+}
+.my_yue .single p{
+    font-size: 13px;
+}
+
+.index_box{
+    width: 100%;
+    background:#fff;
+  
+    
+}
+.index_box .single{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 8px 0;
+    border-bottom:1px solid #efefef;
+    line-height: 15px;
+}
+.index_box p{
+    font-size: 12px;
+}
+.index_box .single img{
+    width:22px;
+    height: 22px;
+}
+.noborder{
+    border:0 !important;
+}

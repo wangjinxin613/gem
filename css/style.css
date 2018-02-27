@@ -1,0 +1,131 @@
+
+body{
+	margin:0;
+	padding:0;
+    background:rgb(238,238,237);
+    font: 14px/1.5 "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size-adjust: .98;
+    width:100%;
+    overflow-x: hidden;
+    
+}
+* {
+
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    font: 14px/1.5 "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+body,div,p,blockquote,hr,ul,ol,li,h1,h2,h3,h4,h5,h6,menu,dd,dl,form,fieldset,input,textarea,caption,select,button,input,pre,hr,td,th,address,section,article,aside,header,footer,nav,dialog,figure,label,span,strong,i,s {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    -webkit-text-size-adjust: 100%;
+}
+.clear{
+    clear: both;
+}
+li{
+    list-style:none;
+}
+.foot{
+    font-size: 11px;
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    border-top: 1px solid #E6E6E6;
+    padding:5px 0 8px 0;
+}
+.foot .single{
+    float: left;
+    width: 20%;
+    text-align: center;
+
+}
+.foot p{
+    line-height:8px;
+    font-size: 10px;
+}
+.foot .single img{
+    width:25px;
+    height: 25px;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.head{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 45px;
+    line-height: 45px;
+    background: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;   
+}
+.head img:first-child{
+    position: absolute;
+    width: 20px;
+    left: 15px;
+    top:12px;
+}
+.head .rightimg{
+    position: absolute;
+    width: 20px;
+    right: 15px;
+    top:12px;
+}
+input,button{
+    outline: none;
+}
+.clear{
+    clear: both;
+}
+/** 轮播图 **/
+.slider ul, li {margin:0;padding:0;-webkit-text-size-adjust: none}
+.slider{display:none}/*用于获取更加体验*/
+.focus{
+    background: none !important;
+    margin:0 auto;
+    text-align: center !important;
+}
+.focus div{
+    position: static !important;
+    text-align: center !important;
+    margin:10px auto !important;
+    display: block;
+    text-align: center !important;
+}
+.focus span{
+    width:8px;
+    height:8px;
+    margin-right:10px;
+
+    border-radius:50%;
+    background:#666;
+    font-size:0
+}
+.focus span.current{background:#fff}
+.top-empty{
+    padding-bottom:45px;
+}
+.noboder{
+    border:0 !important;
+}
+.send_url{
+    position: absolute;
+    right:15px;
+    top:13px;
+    font-size: 13px;
+    color:rgb(215, 191, 153);
+}

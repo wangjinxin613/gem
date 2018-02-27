@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商城</title>
+    <link href="../css/style.css?v=2" rel="stylesheet">
+    <link href="../css/mall.css?v=6" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layui/css/layui.css" media="all">
+    <script src="../js/jquery-1.8.1.min.js"></script>
+</head>
+
+<body>
+<div class="index-head">
+    <div class="mall-list-head">
+        <div class="left">
+            <img src="../icon/return.png" class="return" onclick="window.history.back()">
+        </div>
+        <div class="center">
+            <input type="text" placeholder="请输入品牌名或者商家名">
+        </div>
+        <div class="left">
+            <img src="../icon/gouwuche.png">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mall-list-item">
+        <div class="single">
+            默认
+        </div>
+        <div class="single">
+            商家
+        </div>
+        <div class="single">
+            排序
+        </div>
+        <div class="single">
+            筛选
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div style="padding-bottom:84px;"></div>
+    <!--商品列表  -->
+    <div class="shop wrapper1 c2" id="LAY_demo1">
+        <ul>
+            <li class="single">
+                <a href="detail.html">
+                    <img src="../img/shangpin.jpg">
+                    <p class="p1">黄金足金3D硬金足...</p>
+                    <p class="p2">GD001101 约1.79克-约1.82克</p>
+                    <p class="p3">￥60000
+                        <span class="box">A级</span>
+                    </p>
+                </a>
+            </li>
+            <li class="single">
+                <a href="detail.html">
+                    <img src="../img/shangpin.jpg">
+                    <p class="p1">黄金足金3D硬金足...</p>
+                    <p class="p2">GD001101 约1.79克-约1.82克</p>
+                    <p class="p3">￥60000
+                        <span class="box">A级</span>
+                    </p>
+                </a>
+            </li>
+            <li class="single">
+                <img src="../img/shangpin.jpg">
+                <p class="p1">黄金足金3D硬金足...</p>
+                <p class="p2">GD001101 约1.79克-约1.82克</p>
+                <p class="p3">￥60000
+                    <span class="box">A级</span>
+                </p>
+            </li>
+            <li class="single">
+                <img src="../img/shangpin.jpg">
+                <p class="p1">黄金足金3D硬金足...</p>
+                <p class="p2">GD001101 约1.79克-约1.82克</p>
+                <p class="p3">￥60000
+                    <span class="box">A级</span>
+                </p>
+            </li>
+
+        </ul>
+
+    </div>
+</body>
+<script src="../css/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('flow', function () {
+        var flow = layui.flow;
+
+        flow.load({
+            elem: '.shop' //流加载容器
+            , scrollElem: '.shop ul' //滚动条所在元素，一般不用填，此处只是演示需要。
+            , isAuto: true
+            , isLazyimg: true
+            , end: '没有更多了'
+            , done: function (page, next) { //执行下一页的回调
+
+                //模拟数据插入
+                setTimeout(function () {
+                    var lis = [];
+                    for (var i = 0; i < 12; i++) {
+                        lis.push('<li class="single"><img src="../img/shangpin.jpg"><p class="p1">黄金足金3D硬金足...</p><p class="p2">GD001101 约1.79克-约1.82克</p><p class="p3">￥60000<span class="box">A级</span></p></li>');
+                    }
+                    //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                    //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                    next(lis.join(''), page < 12); //假设总页数为 10
+                }, 500);
+            }
+        });
+
+
+        //按屏加载图片
+        flow.lazyimg({
+            elem: '.shop img'
+            , scrollElem: '.shop img' //一般不用设置，此处只是演示需要。
+        });
+
+    });
+</script>
+
+</html>

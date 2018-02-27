@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>闲置转让</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/send.css?v=4" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+</head>
+
+<body>
+    <div class="head" style="border-bottom:1px solid #eee;">
+        <img src="../icon/cha.png" onclick="window.history.back()" /> 闲置
+    </div>
+    <div class="top-empty"></div>
+    <div class="xz_add">
+        <input type="text" placeholder="标题 品牌品类等买家易搜索到的">
+        <textarea placeholder="宝贝细节描述"></textarea>
+    </div>
+    <div class="xz_img">
+        <div class="add_img" id="demo2">
+        </div>
+        <img src="../icon/add.png" id="test2">
+        <div class="clear"></div>
+        <div class="lbs">
+            <img src="../icon/lbs.png">
+            <div class="didian"> 广东&nbsp;东莞</div>
+        </div>
+    </div>
+    <div class="add-list">
+        <div class="p">价格</div>
+        <div class="p">品牌</div>
+        <div class="p tongcheng">同城交易
+                <div style="float:right;margin-right:10px;">
+                <input type="checkbox" name="abc" value="1" />&nbsp;支持 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                <input type="checkbox" name="abc" value="1" />&nbsp;不支持
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="add-fabu">确定发布</button>
+</body>
+<script src="../css/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('upload', function () {
+        var $ = layui.jquery
+            , upload = layui.upload;
+        //多图片上传
+        upload.render({
+            elem: '#test2'
+            , url: 'add.json'
+            , multiple: false
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo2').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                });
+            }
+            , done: function (res) {
+                //上传完毕
+            }
+        });
+    });
+</script>
+
+</html>
