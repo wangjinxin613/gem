@@ -156,3 +156,8 @@
 .noborder{
     border:0 !important;
 }
+/** 我的分享 */
+.share-head{
+    width: 100%;
+    padding:10px 0;
+}
