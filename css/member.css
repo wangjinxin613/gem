@@ -156,8 +156,246 @@
 .noborder{
     border:0 !important;
 }
+
+
 /** 我的分享 */
 .share-head{
     width: 100%;
     padding:10px 0;
+    background:#fff;
+    width:50vw;
+    float: left;
+    text-align: center;
+}
+.share-head a{
+    color: #666;
+}
+.share-head .active{
+    padding:10px 0;
+    color: rgb(215, 191, 153);
+    border-bottom: 2px solid rgb(215, 191, 153);
+}
+.share-head-index{
+    width: 100vw;
+}
+.share-list{
+    margin-top:8px;
+    background: #fff;
+}
+.share-list .img{
+    width: 100vw;
+    height: 180px;
+}
+.share-list-ms{
+    height: 35px;
+    line-height: 35px;
+    padding:0 10px;
+}
+.share-list-ms img{
+    width: 20px;
+    vertical-align: text-bottom;
+    line-height: 0;
+}
+.share-list-ms span{
+    float: right;
+    margin-right: 35px;
+    margin-top: 5px;
+}
+
+/** 我的关注页面  **/
+.head .btn{
+
+
+}
+.head .box1{
+    border-radius: 5px 0 0 5px;
+
+}
+.head .box2{
+    border-radius: 0px 5px 5px 0px;
+
+}
+.head .btn{
+    margin-top: 11px;
+    margin-left: 30vw;
+}
+.head .box{
+    float: left;
+    margin:0;
+    padding:2px 0;
+    width:20vw;
+    border:1px solid #333;
+    background: #fff;
+    font-size: 12px;
+    
+}
+.head .active{
+    background: #333;
+    color: #fff;
+}
+.follow-list{
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    margin-top:8px;
+    padding:0 15px;
+}
+.follow-list img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    vertical-align: middle;
+    float: left;
+    margin-top:10px; 
+}
+.follow-msg{
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.follow-list p{
+    line-height: 20px;
+}
+.follow-list .p1{
+    font-size: 13px;
+}
+.follow-list .p2 span{
+    font-size: 10px;
+    padding:2px 2px 1px 2px;
+    border:1px dashed #666;
+    color: #666;
+    margin-right: 3px;
+    border-radius: 3px;
+}
+.follow-list .p3{
+    font-size: 12px;    
+    color: #666;
+}
+.follow-status{
+    float: right;
+    font-size: 12px;
+    color: #333;
+    background:#eee;
+    height: 24px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding:3px 15px;
+}
+/** 设置 **/
+.setting-list{
+    margin-top: 8px;
+    background: #fff;
+}
+.setting-list p{
+    padding:10px 15px;
+    background-image: url("../icon/right.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    border-bottom: 1px solid #eee;
+}
+/** 修改昵称 **/
+.updata_name{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    padding:7px 10px;
+    border:0;
+    border-radius: 3px;
+}
+.baocun-btn{
+    width: 90%;
+    margin-left: 5%;
+    background:rgb(37,37,37);
+    color: #fff;
+    border: 0;
+    padding:8px 0;
+    text-align:center;
+    margin-top: 20px;
+}
+/** 鉴定师/设计师认证 **/
+.rz-list{
+    margin-top: 8px;
+    background: #fff;
+}
+.rz-list p{
+    padding:0 15px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+}
+.rz-list input{
+    float: right;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 7.5px;
+    text-align: right;
+    width: calc(100vw - 130px);
+    border:0;
+}
+.rz-list textarea{
+    float: right;
+    height:55px;
+    line-height: 25px;
+    margin-top: 7.5px;
+    text-align: right;
+    width: calc(100vw - 130px);
+    border:0;
+    outline: none;
+}
+.rz-list1{
+    background: #fff;
+    margin-top: 8px;
+}
+.rz-list1 h3{
+    padding:8px 15px;
+    border-bottom: 1px solid #eee;
+}
+.rz-sc{
+    padding:8px 15px;
+}
+.rz-sc .single{
+    float: left;
+    margin-right: 10px;
+}
+.rz-sc .single img{
+    width: 80px;
+    height: 80px;
+}
+.rz-sc .single p{
+    font-size: 11px;
+    color: #666;
+}
+.rz-sc .p2{
+    margin-top: 10px;
+    color: #666;
+    font-size: 10px;
+}
+.rz-sc .p2 img{
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+}
+.rz-btn{
+    background: rgb(215, 191, 153);
+    color: #fff;
+    text-align: center;
+    padding:10px 0;
+    width: 100vw;
+    margin-top: 30px;
+}
+/** 我的账户 **/
+.account-head{
+    padding:20px 15px 10px 15px;
+
+}
+.account-head .p1{
+    font-weight: 600;
+}
+.account-head .p2{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(255,108,108);
+    padding:30px 0;
 }
