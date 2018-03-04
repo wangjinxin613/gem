@@ -129,3 +129,6 @@ input,button{
     font-size: 13px;
     color:rgb(215, 191, 153);
 }
+.borderbottom{
+    border-bottom: 1px solid #eee;
+}

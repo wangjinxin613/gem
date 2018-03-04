@@ -399,3 +399,97 @@
     color: rgb(255,108,108);
     padding:30px 0;
 }
+/** 提现 **/
+.tx-list{
+    margin-top: 8px;
+    background: #fff;
+}
+.tx-list .p1{
+    color: #666;
+    padding:8px 15px;
+    font-size: 12px;
+}
+.tx-list input{
+    padding:2px 15px 5px 15px;
+    font-size: 16px;
+    border:0;
+    width: 100vw;
+    border-bottom: 1px solid #eee;
+}
+.tx-list .p1 span{
+    float: right;
+    color:rgb(255,108,108);
+    font-size: 12px;
+}
+.tx-p{
+    font-size: 12px;
+    padding:8px 15px;
+    color: #666;
+}
+/** 支付绑定 **/
+.pay-list{
+    margin-top: 8px;
+    padding:5px 15px;
+    background: #fff;
+    background-image: url("../icon/right.png");
+    background-position:right 15px center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.pay-list .p2{
+    color: #666;
+}
+.pay-list img{
+
+    width: 15px;
+    vertical-align: text-top;
+}
+/** 消费记录 **/
+.pay-log{
+    padding:8px 15px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.pay-log .p2{
+    font-size: 12px;
+}
+.pay-log span{
+    float: right;
+}
+.pay-log .s1{
+    font-size: 12px;
+    color: #666;
+}
+.pay-log .s2{
+    font-=width: 700;
+}
+/** 我的保证金 **/
+.bzj-head{
+    background: #fff;
+}
+.bzj-head .single{
+    width: calc(50vw - 0.5px);
+    float: left;
+    padding:10px 15px;
+}
+.bzj-head p{
+    line-height: 30px;
+}
+.bzj-head .p3{
+    font-size: 12px;
+    color: #666;
+}
+.bzj-head .p1{
+    font-weight: 600;
+}
+.bzj-head .p2{
+    color: rgb(255,108,108);
+    font-size: 22px;
+    font-weight: 600;
+}
+.bzj-head .left{
+    border-right: 1px solid #eee;
+}
+.bzj-head .right{
+    text-align: right;
+}
