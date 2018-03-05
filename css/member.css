@@ -493,3 +493,24 @@
 .bzj-head .right{
     text-align: right;
 }
+/** 我的拍卖 **/
+.auction-head{
+    width: 100vw;
+}
+.auction-head li{
+    float: left;
+    width: 25vw;
+    text-align: center;
+    padding:10px 0;
+    background: #fff;
+}
+.auction-head .active{
+    border-bottom:3px solid rgb(215, 191, 153);
+    padding:10px 0;
+    color:rgb(215, 191, 153);
+}
+.nodata{
+    width: 200px;
+    margin-top: 150px;
+    text-align: center;
+}
