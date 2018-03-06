@@ -1,0 +1,136 @@
+.nav{
+    background: #fff;
+    overflow: hidden;
+}
+.nav li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding:10px 0;
+}
+.nav li a{
+    padding: 5px 0;
+}
+.nav li .active{
+    border-bottom: 3px solid rgb(215, 191, 153);
+    color: rgb(215, 191, 153);
+}
+.nav li a:active{
+    border-bottom: 3px solid rgb(215, 191, 153);
+    color: rgb(215, 191, 153);
+}
+.index-list{
+    background: #fff;
+    margin-top: 10px;
+}
+.index-list .single{
+    border-bottom: 1px solid #eee;
+    line-height: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+.index-list .single img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    padding:0 15px;
+    float: left;
+}
+.index-list .single .center{
+    float: left;
+    margin-top: 10px;
+}
+.index-list .single .center .p1{
+    font-size: 16px;
+    color: rgb(215, 191, 153);
+}
+.index-list .single .center .p2{
+    color: #666;
+}
+.index-list .single .center p{
+    line-height: 25px;
+}
+.index-list .single .right{
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    font-size: 13px;
+    color: #666;
+}
+.detail-name{
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px 15px;
+}
+.detail-name .p2{
+    font-size: 12px;
+}
+.detail-name p{
+    line-height: 20px;
+}
+.detail-name p span{
+    color: rgb(215, 191, 153);
+}
+.foot-btn{
+    background: rgb(215, 191, 153);
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align:center;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+/** 发布页面 **/
+.add-index{
+    margin-top: 10px;
+    background: #fff;
+}
+.add-index .single{
+    border-bottom: 1px solid #eee;
+    height: 60px;
+    line-height: 60px;
+}
+.add-index .single img{
+    height: 40px;
+    padding:0 15px;
+    margin-top: 10px;
+}
+.add-index .single span{
+    float: right;
+    line-height: 60px;
+    background: url("../icon/right.png");
+    background-size: 20px;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    padding-right: 35px;
+}
+.add-btn{
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    border:0;
+    background: rgb(215, 191, 153);
+    color: #fff;
+}
+.add-input .single{
+    height: 40px;
+    background: #fff;
+    line-height: 40px;
+    padding:0 15px;
+}
+.add-input .single input{
+    float: right;
+    text-align: right;
+    margin-top: 7px;
+    width: calc(100% - 80px);
+    border: 0;
+}
+.margin10{
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+}

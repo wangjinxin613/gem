@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>发布找货</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/purchase.css?v=5" rel="stylesheet">
+    <link href="../css/send.css?v=4" rel="stylesheet">
+    <link href="../css/mall.css?v=6" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <img src="../icon/return.png" onclick="window.history.back()" />发布找货
+    </div>
+    <div class="top-empty"></div>
+    <div class="add-input">
+        <div class="single">
+            标题：
+            <input type="text" placeholder="请输入30字以内的标题">
+        </div>
+    </div>
+    <div class="add-input margin10">
+        <div class="single">
+            价格：
+            <input type="text" placeholder="请输入您的意向价格">
+        </div>
+    </div>
+    <div class="xz_add">
+
+        <textarea placeholder="宝贝细节描述"></textarea>
+    </div>
+    <div class="xz_img">
+        <div class="add_img" id="demo2">
+        </div>
+        <img src="../icon/add.png" id="test2">
+        <div class="clear"></div>
+
+    </div>
+    <button class="add-btn">发布</button>
+</body>
+<script src="../css/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('upload', function () {
+        var $ = layui.jquery
+            , upload = layui.upload;
+        //多图片上传
+        upload.render({
+            elem: '#test2'
+            , url: 'add.json'
+            , multiple: false
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo2').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                });
+            }
+            , done: function (res) {
+                //上传完毕
+            }
+        });
+    });
+</script>
+
+</html>
