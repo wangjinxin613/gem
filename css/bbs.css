@@ -224,12 +224,13 @@
 	margin-top: 15px;
 	color: #666;
 }
-/** 文章 **/
+/** 历史记录 - 文章 **/
 .news-list{
 	width: 100%;
 	border-bottom: 1px solid #eee;
 	background: #fff;
 	padding:15px 0;
+	overflow: hidden;
 }
 .news-list .left{
 	float: left;
@@ -244,4 +245,128 @@
 	position: relative;
 	right:15px;
 	padding-bottom: 3px;
+	color:#999;
+}
+.news-list .left p:nth-child(2){
+	font-size: 16px;
+	color:rgb(255,108,108);
+}
+.news-list .left p:nth-child(3){
+	color: #999;
+}
+.news-list .right{
+	margin-top: 20px;
+}
+.news-list .right p{
+	float: left;
+	width: 70%;
+	
+	line-height: 30px;
+}
+.news-list .right p:nth-child(1){
+	font-size: 14px;
+	font-weight: 600;
+}
+/* 文章 */
+.wz-nav{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+.wz-nav li{
+	float: left;
+	width: 33.3%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.wz-nav .active{
+	color:rgb(255,108,108);
+}
+/* 我的 */
+.my-head{
+
+	background: #fff;
+	padding-bottom: 15px;
+}
+.my-head .headimg-div{
+	padding:20px 15px 20px 15px;
+	font-weight: 700;
+	font-size: 16px;
+	
+}
+.my-head .headimg-div img{
+	width: 70px;
+	height: 70px;
+	position: relative;
+	top:10px;
+}
+.my-head .guanzhu{
+	width: 100%;
+	overflow: hidden;
+
+	padding-bottom: 15px;
+}
+.my-head .guanzhu li{
+	float: left;
+	text-align: center;
+	width: 33.3%;
+}
+.qiandao{
+	display: block;
+	background:rgb(255,108,108);
+	width: calc(100% - 50px);
+	height: 40px;
+	color: #FFF;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 auto;
+	border: 0;
+	border-radius:14PX;
+	line-height: 40PX;
+}
+.my-list{
+	width: 100%;
+	background: #fff;
+	margin-top: 8px;
+}
+
+.my-list .single{
+	overflow: hidden;
+	content: " 44";
+	clear: both;
+	height: 50px;
+}
+.my-list img{
+	float: left;
+	display: block;
+	width:25px ;
+	height: 25px;
+	margin:11px 15px
+}
+.my-list .right{
+	float: left;
+	line-height:50px;
+	width: calc(100% - 55px);
+	height: 50px;
+	border-bottom: 1px solid #eee;
+	background: url(../icon/right.png);
+	background-size: 20px;
+	background-position: right 15px center;
+	background-repeat: no-repeat;
+}
+.noboder{
+	border:0 !important;
+}
+.return{
+	background:rgb(255,108,108);
+	width: 100%;
+	padding:10px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	border: 0;
+	margin-top: 10px;
 }
