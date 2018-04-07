@@ -1,0 +1,208 @@
+/*
+ 	最新的几个页面的样式表
+ * */
+@charset "utf-8";
+/* 首页  */
+.head_nav .single{
+	width: 33.3% !important;
+}
+#index-list{
+	width: 100%;
+	margin-top: 8px;
+}
+#index-list img{
+	width: 100%;
+	margin:0;
+	display: block;
+}
+#index-list .content{
+	
+	width: 100%;
+	background: #fff;
+	padding:8px 15px;
+}
+#index-list .content img{
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	top: -30px;
+	padding-right: 5px;
+}
+#index-list .content .right p{
+	font-size: 13px;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#index-list .content .right p:nth-child(2){
+	color: #666;;
+	font-size: 12px;
+}
+/* 商圈 */
+.arcitle-list{
+	background: #fff;
+	margin-top: 8px;
+	position: relative;
+	overflow: hidden;
+}
+.arcitle-list .content-top{
+	width: 100%;
+	padding:5px 15px;
+	overflow: hidden;
+}
+
+.arcitle-list .content-top img{
+	width: 50px;
+	height: 50px;
+	float: left;
+	border-radius: 50%;
+}
+.arcitle-list .content-top .content-top-right{
+	left:8px;
+	position: relative;
+	top: 8px;
+}
+.arcitle-list .content-top .content-top-right p{
+	line-height: 20px;
+}
+.arcitle-list .content-top .content-top-right p:nth-child(1){
+	font-weight: 600;
+}
+.arcitle-list .content-top .content-top-right p:nth-child(2){
+	font-size: 12px;
+	color: #999999;
+}
+.arcitle-list .content-top .send-time{
+	position: absolute;
+	right: 15px;
+	font-size: 12px;
+	top: 10px;
+	color: #999999;
+}
+.arcitle-list .content-body{
+	padding:5px 20px;
+}
+.arcitle-list .content-img{
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	display: block;
+	border-radius: 3px;
+}
+.arcitle-list .content-foot{
+	text-align: right;
+	overflow: hidden;
+	float: right;
+	padding-right:20px;
+}
+
+.arcitle-list .content-foot img{
+	width: 15px;
+	position: relative;
+	top: 2px;
+}
+
+.arcitle-list .content-foot .single{
+	float: left;
+	font-size: 13px;
+	color: #999;
+	padding: 8px 0;;
+	margin-left: 10px;
+}
+/* 置购品 */
+.litt-nav{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-top: 10px;
+	border-bottom: 1px solid #eee;
+}
+.litt-nav li{
+	float: left;
+	padding:8px 0;
+
+	width: 50%;
+	text-align: center;
+}
+.litt-nav li a{
+	color: #999;
+}
+.litt-nav li .active{
+	border-bottom: 3px solid rgb(215, 191, 153);
+	color: #333;
+	padding-bottom: 8px;
+	
+}
+.new-notice{
+	background: red;
+	width: 7px;
+	height: 7px;
+	border-radius: 100px;
+	position: absolute;
+	right: 7px;
+	top: 11px;
+}
+.new-notice1{
+	background: red;
+	width: 7px;
+	height: 7px;
+	border-radius: 100px;
+	position: absolute;
+	left: 35px;
+	top: 11px;
+}
+.new-head{
+	width: 100%;
+	background:#fff;
+	overflow: hidden;
+}
+.new-head li{
+	float: left;
+	position: relative;
+	padding:10px 0;
+	text-align: center;
+	width: 50%;
+}
+.new-head li:nth-child(1){
+	text-align: right;
+	padding-right: 10px;
+}
+.new-head li:nth-child(2){
+	text-align:left;
+	padding-left: 10px;
+}
+.new-head li .active{
+	color:rgb(215, 191, 153);
+	border-bottom: 2px solid rgb(215, 191, 153);
+	padding-bottom: 5px;
+}
+.foot .single p{
+	position: relative;
+
+}
+.foot-notice{
+	background: red;
+	width: 7px;
+	height: 7px;
+	border-radius: 100px;
+	position: absolute;
+	
+	margin-right: 5px;
+	top: -28px;
+}
+.notice-list .new{
+	background: rgb(210,30,6);
+	float: right;
+	display: block;
+	height: 18px;
+	width: 18px;
+	position: relative;
+	right: 20px;
+	text-align: center;
+	color: #fff;
+	border-radius: 100px;
+	top: 10px;
+	font-size: 13px;
+}
